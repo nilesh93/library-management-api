@@ -22,9 +22,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ilur97086d0wkre7x^qogs9r163w19^_^#0ck9&qibrer6_dp2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.apps.reactive-solutions.xyz','188.166.176.231']
 
 # Application definition
 
@@ -89,9 +89,9 @@ WSGI_APPLICATION = 'services.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sabaragamuwa-library',
-        'USER': 'root',
-        'PASSWORD': 'root',
+        'NAME': 'library_sabaragamuwa',
+        'USER': 'library_sabaragamuwa',
+        'PASSWORD': 'library_sabaragamuwa',
         'HOST': '127.0.0.1',
         'PORT': '3306'
     }
@@ -132,3 +132,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
