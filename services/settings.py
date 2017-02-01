@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'corsheaders',
     'books.apps.BooksConfig',
+    'members.apps.MembersConfig',
 ]
 
 MIDDLEWARE = [
