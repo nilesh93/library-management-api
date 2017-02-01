@@ -26,7 +26,7 @@ class MemberType(models.Model):
     fee = models.FloatField(default=True)
 
     def __str__(self):
-        return self.type + " - Rs" + self.fee
+        return self.type
 
 
 class Member(models.Model):
